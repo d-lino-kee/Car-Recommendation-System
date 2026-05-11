@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<form class="card" action="/recommend" method="post">
+  <input type="hidden" name="user_id" value="{{ user_id }}" />
+  <h2>Your preferences</h2>
+  <div class="grid">
+    <label>Reliability <input name="reliability" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" /><span>7</span></label>
+    <label>Performance <input name="performance" type="range" min="0" max="10" value="6" oninput="this.nextElementSibling.textContent=this.value" /><span>6</span></label>
+    <label>Ergonomics <input name="ergonomics" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" /><span>7</span></label>
+    <label>Ease of getting in <input name="ease_entry" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" /><span>7</span></label>
+  </div>
+
+  <h3>Lifestyle</h3>
+  <div class="grid grid-3">
+    <label><input type="checkbox" name="lifestyle_outdoors" /> Outdoorsy</label>
+    <label><input type="checkbox" name="lifestyle_city" /> City driving</label>
+    <label><input type="checkbox" name="lifestyle_family" /> Family-first</label>
+    <label><input type="checkbox" name="lifestyle_track" /> Track days</label>
+    <label><input type="checkbox" name="lifestyle_luxury" /> Luxury</label>
+    <label><input type="checkbox" name="lifestyle_economy" /> Economy</label>
+  </div>
+
+  <h3>Budget (optional)</h3>
+  <div class="grid">
+    <label>Min price (USD) <input name="price_min" type="number" placeholder="e.g. 20000" /></label>
+    <label>Max price (USD) <input name="price_max" type="number" placeholder="e.g. 50000" /></label>
+  </div>
+
+  <button type="submit">Find my car</button>
+</form>
+{% endblock %}

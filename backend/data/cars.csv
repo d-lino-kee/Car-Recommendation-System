@@ -1,0 +1,53 @@
+make,model,year,price_usd,body_style,horsepower,torque_lb_ft,drivetrain,transmission,engine_type,fuel_economy_mpg,seating_capacity,cargo_volume_cuft,range_miles,towing_capacity_lbs,safety_rating,best_for,segment,popularity_score
+Toyota,Corolla,2024,22500,sedan,169,151,FWD,automatic,hybrid,53,5,13.1,,0,5,commuters,economy,0.91
+Honda,Civic,2024,24500,sedan,158,138,FWD,automatic,ICE,36,5,14.8,,0,5,commuters,economy,0.89
+Mazda,Mazda3,2024,25400,sedan,191,186,AWD,automatic,ICE,30,5,13.1,,0,5,commuters,economy,0.77
+Volkswagen,Jetta,2024,22995,sedan,158,184,FWD,automatic,ICE,36,5,14.1,,0,4,commuters,economy,0.72
+Hyundai,Elantra,2024,21500,sedan,147,132,FWD,automatic,ICE,37,5,14.2,,0,5,budget,economy,0.81
+Kia,Forte,2024,20115,sedan,147,132,FWD,automatic,ICE,36,5,15.3,,0,5,budget,economy,0.74
+Nissan,Sentra,2024,20160,sedan,149,146,FWD,automatic,ICE,37,5,14.3,,0,5,budget,economy,0.68
+Chevrolet,Trax,2024,20400,hatchback,137,162,FWD,automatic,ICE,32,5,25.3,,0,4,budget,economy,0.66
+Toyota,RAV4,2024,30025,SUV,203,184,AWD,automatic,hybrid,40,5,37.6,,3500,5,families,mid-range,0.95
+Honda,CR-V,2024,31895,SUV,204,247,AWD,automatic,hybrid,40,5,39.3,,1500,5,families,mid-range,0.92
+Mazda,CX-5,2024,29000,SUV,187,186,AWD,automatic,ICE,29,5,30.9,,2000,5,families,mid-range,0.85
+Hyundai,Tucson,2024,29950,SUV,187,178,AWD,automatic,ICE,28,5,38.7,,2000,5,families,mid-range,0.8
+Ford,Escape,2024,29495,SUV,180,177,AWD,automatic,ICE,30,5,33.5,,1500,5,families,mid-range,0.78
+Subaru,Forester,2024,30495,SUV,182,176,AWD,automatic,ICE,29,5,35.5,,1500,5,off-road,mid-range,0.82
+Kia,Sportage,2024,29490,SUV,187,178,AWD,automatic,ICE,29,5,39.6,,2000,5,families,mid-range,0.79
+Ford,F-150,2024,36000,truck,400,500,4WD,automatic,ICE,22,6,52.8,,14000,5,towing,mid-range,0.97
+Chevrolet,Silverado 1500,2024,37495,truck,355,383,4WD,automatic,ICE,20,6,53.0,,13300,4,towing,mid-range,0.93
+Ram,1500,2024,39000,truck,395,410,4WD,automatic,ICE,21,6,53.9,,12750,5,towing,mid-range,0.9
+Toyota,Tacoma,2024,33500,truck,278,317,4WD,automatic,hybrid,23,5,38.0,,6500,5,off-road,mid-range,0.88
+Ford,Maverick,2024,23515,truck,250,277,FWD,automatic,hybrid,42,5,33.3,,4000,4,commuters,economy,0.76
+Ford,Mustang GT,2024,42995,coupe,480,420,RWD,manual,ICE,16,4,13.5,,0,4,performance,mid-range,0.84
+Chevrolet,Camaro SS,2024,44995,coupe,455,455,RWD,manual,ICE,16,4,9.1,,0,4,performance,mid-range,0.79
+Subaru,WRX,2024,32205,sedan,271,258,AWD,manual,ICE,23,5,12.5,,0,4,performance,mid-range,0.75
+Honda,Civic Type R,2024,44990,hatchback,315,310,FWD,manual,ICE,22,5,22.6,,0,5,performance,mid-range,0.73
+Toyota,GR86,2024,29250,coupe,228,184,RWD,manual,ICE,27,4,6.3,,0,4,performance,mid-range,0.7
+BMW,3 Series,2024,44900,sedan,255,295,RWD,automatic,ICE,30,5,17.0,,0,5,luxury,luxury,0.85
+Mercedes-Benz,C-Class,2024,47250,sedan,255,295,RWD,automatic,ICE,28,5,12.6,,0,5,luxury,luxury,0.83
+Audi,A4,2024,43900,sedan,201,236,AWD,automatic,ICE,29,5,13.0,,0,5,luxury,luxury,0.81
+Genesis,G70,2024,40450,sedan,300,311,AWD,automatic,ICE,24,5,10.2,,0,5,luxury,luxury,0.72
+Lexus,IS,2024,40925,sedan,241,258,AWD,automatic,ICE,26,5,10.8,,0,4,luxury,luxury,0.74
+BMW,X5,2024,66800,SUV,335,331,AWD,automatic,ICE,22,5,33.9,,7200,5,luxury,luxury,0.86
+Mercedes-Benz,GLC,2024,56750,SUV,258,295,AWD,automatic,ICE,25,5,19.4,,4850,5,luxury,luxury,0.83
+Audi,Q5,2024,47500,SUV,261,273,AWD,automatic,ICE,25,5,25.1,,4400,5,luxury,luxury,0.84
+Lexus,RX,2024,51150,SUV,275,317,AWD,automatic,hybrid,36,5,29.6,,3500,5,luxury,luxury,0.87
+Volvo,XC90,2024,56550,SUV,455,523,AWD,automatic,hybrid,35,7,35.4,,5000,5,families,luxury,0.8
+Tesla,Model 3,2024,40240,sedan,358,307,AWD,automatic,electric,134,5,15.0,358,0,5,commuters,mid-range,0.91
+Tesla,Model Y,2024,43990,SUV,384,376,AWD,automatic,electric,123,5,68.0,330,3500,5,families,mid-range,0.94
+Rivian,R1T,2024,69900,truck,835,908,AWD,automatic,electric,74,5,54.0,314,11000,5,off-road,luxury,0.78
+Ford,F-150 Lightning,2024,49995,truck,580,775,AWD,automatic,electric,78,5,55.0,320,10000,5,towing,mid-range,0.82
+Chevrolet,Equinox EV,2024,34995,SUV,290,333,FWD,automatic,electric,121,5,29.9,319,1000,5,commuters,mid-range,0.76
+Hyundai,IONIQ 6,2024,38615,sedan,320,446,AWD,automatic,electric,140,5,11.1,361,0,5,commuters,mid-range,0.74
+Kia,EV6,2024,42600,hatchback,320,446,AWD,automatic,electric,117,5,24.4,310,2300,5,commuters,mid-range,0.77
+BMW,iX,2024,87100,SUV,610,811,AWD,automatic,electric,86,5,35.5,324,5500,5,luxury,ultra-luxury,0.71
+Porsche,911 Carrera,2024,116900,coupe,379,331,RWD,automatic,ICE,19,4,4.9,,0,5,performance,ultra-luxury,0.82
+Ferrari,Roma,2024,222000,coupe,612,560,RWD,automatic,ICE,15,4,7.0,,0,4,performance,ultra-luxury,0.65
+Lamborghini,Urus,2024,230000,SUV,657,627,AWD,automatic,ICE,14,5,21.8,,7716,4,luxury,ultra-luxury,0.62
+Rolls-Royce,Ghost,2024,340000,sedan,563,627,AWD,automatic,ICE,15,5,16.0,,0,4,luxury,ultra-luxury,0.5
+Tesla,Model S Plaid,2024,89990,sedan,1020,1050,AWD,automatic,electric,109,5,28.0,396,0,5,performance,ultra-luxury,0.79
+Toyota,Sienna,2024,38170,minivan,245,176,AWD,automatic,hybrid,36,8,101.0,,3500,5,families,mid-range,0.83
+Chrysler,Pacifica,2024,38990,minivan,287,262,FWD,automatic,hybrid,82,7,140.5,,3600,5,families,mid-range,0.78
+Chevrolet,Tahoe,2024,57800,SUV,355,383,4WD,automatic,ICE,17,9,122.9,,8400,5,families,luxury,0.85
+Ford,Expedition,2024,58000,SUV,400,480,4WD,automatic,ICE,18,8,104.6,,9300,5,families,luxury,0.82

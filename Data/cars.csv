@@ -1,0 +1,21 @@
+make,model,year,body_style,price_usd,reliability,performance,ergonomics,ease_entry,mpg,drive,seat_height_cm,cargo_l,tag_outdoors,tag_city,tag_family,tag_track,tag_luxury,tag_economy
+Toyota,Corolla,2022,Sedan,23000,9,5,7,8,35,FWD,48,370,0,1,1,0,0,1
+Honda,Civic,2022,Sedan,24000,8,6,7,7,34,FWD,47,430,0,1,1,0,0,1
+Subaru,Outback,2023,Wagon,32000,8,6,7,9,28,AWD,62,920,1,0,1,0,0,0
+Mazda,CX-5,2023,SUV,31000,8,6,7,8,27,AWD,60,870,1,0,1,0,0,0
+BMW,330i,2021,Sedan,42000,6,8,7,6,30,RWD,50,480,0,1,0,0,1,0
+Tesla,Model 3,2023,Sedan,39900,7,9,8,7,120,RWD,48,425,0,1,0,0,1,0
+Ford,F-150,2022,Truck,38000,7,7,6,7,22,4WD,75,1500,1,0,1,0,0,0
+Jeep,Wrangler,2021,SUV,36000,5,6,5,7,20,4WD,74,900,1,0,0,0,0,0
+Porsche,911,2020,Coupe,98000,6,10,7,5,22,RWD,43,132,0,0,0,1,1,0
+Volkswagen,Golf,2021,Hatch,23000,7,6,7,8,33,FWD,52,380,0,1,1,0,0,1
+Hyundai,Elantra,2022,Sedan,21000,8,5,7,8,37,FWD,49,402,0,1,1,0,0,1
+Kia,Sorento,2022,SUV,29000,8,6,7,8,26,AWD,63,1100,1,0,1,0,0,0
+Audi,A4,2021,Sedan,41000,6,8,8,7,30,AWD,50,460,0,1,0,0,1,0
+Volvo,XC60,2022,SUV,52000,8,7,9,9,26,AWD,64,910,1,0,1,0,1,0
+Chevrolet,Bolt,2022,Hatch,27000,7,7,7,8,115,FWD,55,470,0,1,1,0,0,1
+Toyota,4Runner,2020,SUV,38000,8,6,6,7,18,4WD,76,1310,1,0,1,0,0,0
+Honda,Odyssey,2021,Van,34000,8,5,7,9,22,FWD,60,1400,0,0,1,0,0,0
+Mercedes,C-Class,2021,Sedan,45000,6,8,8,7,28,RWD,49,435,0,1,0,0,1,0
+Ford,Mustang,2021,Coupe,36000,6,9,6,6,24,RWD,45,382,0,0,0,1,0,0
+Subaru,Forester,2023,SUV,30000,9,6,8,9,29,AWD,65,910,1,0,1,0,0,0

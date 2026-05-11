@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="card">
+    <h2>Top matches</h2>
+    {% if results|length == 0 %}
+      <p>No cars matched your filters. Try broadening the price range.</p>
+    {% else %}
+      <ul class="list">
+        {% for r in results %}
+        <li class="list-item">
+          <div>
+            <strong>{{ r.name }}</strong>
+            <div class="muted">{{ r.year }} • {{ r.body_style }} • ${{ '%.0f'|format(r.price_usd) }}</div>
+          </div>
+          <div class="score">{{ '%.3f'|format(r.score) }}</div>
+          <div class="actions">
+            <button onclick="sendFeedback({{ r.id }}, true)">👍 Like</button>
+            <button onclick="sendFeedback({{ r.id }}, false)">👎 Dislike</button>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="muted">Tip: like or dislike a few to personalize future results.</p>
+    {% endif %}
+  </section>
+
+<script>
+  const userId = {{ user_id if user_id else 'null' }};
+  async function sendFeedback(carId, like) {
+    if (!userId) return alert('No user id');
+    await fetch('/feedback', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({user_id: userId, car_id: carId, like})
+    });
+    alert('Thanks! Your feedback will improve recommendations next time.');
+  }
+</script>
+{% endblock %}
