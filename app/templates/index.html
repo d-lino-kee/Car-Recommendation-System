@@ -3,29 +3,47 @@
 <form class="card" action="/recommend" method="post">
   <input type="hidden" name="user_id" value="{{ user_id }}" />
   <h2>Your preferences</h2>
-  <div class="grid">
-    <label>Reliability <input name="reliability" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" /><span>7</span></label>
-    <label>Performance <input name="performance" type="range" min="0" max="10" value="6" oninput="this.nextElementSibling.textContent=this.value" /><span>6</span></label>
-    <label>Ergonomics <input name="ergonomics" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" /><span>7</span></label>
-    <label>Ease of getting in <input name="ease_entry" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" /><span>7</span></label>
+  <p class="muted small">Drag the sliders to weight what matters most.</p>
+
+  <div class="sliders">
+    <div class="slider-row">
+      <label for="reliability">Reliability</label>
+      <input id="reliability" name="reliability" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" />
+      <span class="val">7</span>
+    </div>
+    <div class="slider-row">
+      <label for="performance">Performance</label>
+      <input id="performance" name="performance" type="range" min="0" max="10" value="6" oninput="this.nextElementSibling.textContent=this.value" />
+      <span class="val">6</span>
+    </div>
+    <div class="slider-row">
+      <label for="ergonomics">Ergonomics</label>
+      <input id="ergonomics" name="ergonomics" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" />
+      <span class="val">7</span>
+    </div>
+    <div class="slider-row">
+      <label for="ease_entry">Ease of entry</label>
+      <input id="ease_entry" name="ease_entry" type="range" min="0" max="10" value="7" oninput="this.nextElementSibling.textContent=this.value" />
+      <span class="val">7</span>
+    </div>
   </div>
 
   <h3>Lifestyle</h3>
-  <div class="grid grid-3">
-    <label><input type="checkbox" name="lifestyle_outdoors" /> Outdoorsy</label>
-    <label><input type="checkbox" name="lifestyle_city" /> City driving</label>
-    <label><input type="checkbox" name="lifestyle_family" /> Family-first</label>
-    <label><input type="checkbox" name="lifestyle_track" /> Track days</label>
-    <label><input type="checkbox" name="lifestyle_luxury" /> Luxury</label>
-    <label><input type="checkbox" name="lifestyle_economy" /> Economy</label>
+  <div class="pills">
+    <label class="pill"><input type="checkbox" name="lifestyle_outdoors" /><span>Outdoorsy</span></label>
+    <label class="pill"><input type="checkbox" name="lifestyle_city" /><span>City driving</span></label>
+    <label class="pill"><input type="checkbox" name="lifestyle_family" /><span>Family-first</span></label>
+    <label class="pill"><input type="checkbox" name="lifestyle_track" /><span>Track days</span></label>
+    <label class="pill"><input type="checkbox" name="lifestyle_luxury" /><span>Luxury</span></label>
+    <label class="pill"><input type="checkbox" name="lifestyle_economy" /><span>Economy</span></label>
   </div>
 
   <h3>Budget (optional)</h3>
   <div class="grid">
-    <label>Min price (USD) <input name="price_min" type="number" placeholder="e.g. 20000" /></label>
-    <label>Max price (USD) <input name="price_max" type="number" placeholder="e.g. 50000" /></label>
+    <label class="field">Min price (USD)<input name="price_min" type="number" placeholder="20000" /></label>
+    <label class="field">Max price (USD)<input name="price_max" type="number" placeholder="50000" /></label>
   </div>
 
-  <button type="submit">Find my car</button>
+  <button class="cta" type="submit">Find my car</button>
 </form>
 {% endblock %}

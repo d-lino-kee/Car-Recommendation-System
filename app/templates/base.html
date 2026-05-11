@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset = "utf-8" />
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1" />
-        <title>Car Recommender ML model</title>
-        <link rel = "stylesheet" href = "/static/styles.css" />
-    </head>
-    <body>
-        <header class = "container">
-            <h1> Car Recommender ML</h1>
-        </header>
-        <main class = "container">
-            {% block content %}{% endblock %}
-        </main>
-        <footer class = "container muted">
-            <p>Built with FastAPI + SQLite + scikit-learn</p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Recommender ML</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>Car Recommender ML</h1>
+        <p class="tagline">Lifestyle-driven recommendations powered by a hybrid scikit-learn model.</p>
+      </div>
+    </header>
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="container muted">
+      <p>Built with FastAPI + SQLite + scikit-learn</p>
+    </footer>
+  </body>
 </html>

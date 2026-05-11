@@ -23,7 +23,7 @@ def car_matrix(cars: list[Car]) -> np.ndarray:
     X = np.asarray(X, dtype=float)
     if X.size:
         num = X[:, :len(auto_num_features)]
-        X[:, :len(auto_num_features)] = (num - num.min(axis=0)) / np.maximum(1e-9, num.ptp(axis=0))
+        X[:, :len(auto_num_features)] = (num - num.min(axis=0)) / np.maximum(1e-9, np.ptp(num, axis=0))
     return X
 
 
@@ -79,7 +79,7 @@ def train_user_model(db: Session, user_id: int, cars: list[Car]) -> LogisticRegr
 
     X = np.asarray(X_list, dtype=float)
     num = X[:, :len(auto_num_features)]
-    X[:, :len(auto_num_features)] = (num - num.min(axis=0)) / np.maximum(1e-9, num.ptp(axis=0))
+    X[:, :len(auto_num_features)] = (num - num.min(axis=0)) / np.maximum(1e-9, np.ptp(num, axis=0))
     y = np.asarray(y_list, dtype=int)
 
     clf = LogisticRegression(max_iter=1000)

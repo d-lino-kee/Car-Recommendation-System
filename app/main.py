@@ -7,7 +7,7 @@ from typing import Optional
 
 from .database import Base, engine, get_session
 from .models import Car, User, Interaction
-from .schemas import RecommendRequest, Feedback
+from .schemas import Feedback
 from .recommender import hybrid_rank
 from . import seed_data
 
@@ -32,7 +32,7 @@ async def index(request: Request, db: Session = Depends(db_dep)):
         db.add(user)
         db.commit()
         db.refresh(user)
-    return templates.TemplateResponse("index.html", {"request": request, "user_id": user.id})
+    return templates.TemplateResponse(request, "index.html", {"user_id": user.id})
 
 @app.post("/recommend", response_class = HTMLResponse)
 async def recommend(
@@ -87,8 +87,9 @@ async def recommend(
             "score": round(float(scores[idx]), 4)
         })
 
-        return templates.TemplateResponse("results.html", {"request": request, "results": ranked, "user_id": user_id})
-    
+    return templates.TemplateResponse(request, "results.html", {"results": ranked, "user_id": user_id})
+
+
 @app.post("/feedback")
 async def feedback(fb: Feedback, db: Session = Depends(db_dep)):
     # ensure user exists

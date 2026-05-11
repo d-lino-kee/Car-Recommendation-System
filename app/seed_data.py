@@ -23,7 +23,7 @@ def seed() -> None:
                     model=row["model"],
                     year=int(row["year"]),
                     body_style=row["body_style"],
-                    price_use=float(row["price_usd"]),
+                    price_usd=float(row["price_usd"]),
                     reliability=float(row["reliability"]),
                     performance=float(row["performance"]),
                     ergonomics=float(row["ergonomics"]),
